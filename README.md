@@ -54,5 +54,10 @@ Algorithms explored:
 - XGBoost  
 - Gradient Boosting  
 
-The final model is exported as:
+## 📁 Data
+
+The dataset used for this project is **too large to host directly on GitHub**.  
+To run the project, download the dataset from the link below:
+
+https://www.kaggle.com/datasets/amanalisiddiqui/fraud-detection-dataset?resource=download
 
