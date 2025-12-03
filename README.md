@@ -1,61 +1,58 @@
 # 🚨 Fraud Detection ML Application
 
-A complete end-to-end machine learning project for detecting fraudulent financial transactions, featuring a production-ready Streamlit web app.
-
-This repository demonstrates:
-- Data analysis
-- Feature engineering
-- Model training
-- Pipeline building
-- Real-time predictions with Streamlit UI
-- Clean, modular, maintainable project structure
+## 🔍 Project Overview
+This project builds a machine learning system to identify fraudulent financial transactions using structured data, feature engineering, and a fully interactive Streamlit application.  
+The goal is straightforward: detect suspicious transactions early, reduce risk, and demonstrate a clean, production-ready ML workflow.
 
 ---
 
-## 📦 1. Project Overview
-
-Financial fraud remains a major challenge in modern digital transactions.  
-This project builds a machine learning pipeline to classify whether a transaction is **fraudulent (1)** or **legitimate (0)**.
-
-The application includes:
-- A trained ML pipeline (`fraud_detection_pipeline.pkl`)
-- A streamlined Streamlit frontend for real-time usage
-- Structured notebooks for reproducibility
-- Modular code designed for clarity and production-readiness
+## 🎯 Objectives
+- Analyze transaction patterns that differentiate fraud from legitimate activity  
+- Engineer meaningful features that improve fraud detection accuracy  
+- Train and evaluate machine learning models for classification  
+- Deploy a real-time prediction interface using Streamlit  
+- Provide insights into the most influential fraud indicators  
 
 ---
 
-## 📊 3. Dataset Description
+## 🧰 Tools & Technologies
 
-*Dataset is not included in the repository to avoid large files.*
-
-Typical features:
-- **type** — transaction type  
-- **amount** — transaction value  
-- **oldbalanceOrg** — sender balance (before)  
-- **newbalanceOrig** — sender balance (after)  
-- **oldbalanceDest** — receiver balance (before)  
-- **newbalanceDest** — receiver balance (after)  
-- **isFraud** — target label  
-
-The target variable is **isFraud** (0 = safe, 1 = fraud).
+| Category | Tools / Libraries |
+|----------|------------------|
+| Programming | Python |
+| Data Handling | pandas, numpy |
+| Modeling | scikit-learn, XGBoost, joblib |
+| Deployment | Streamlit |
+| Environment | Jupyter Notebook |
 
 ---
 
-## 🧠 4. Machine Learning Pipeline
+## 🔬 Workflow Breakdown
 
-### 4.1 Preprocessing
-- Encoding categorical features  
+### **1. Data Cleaning**
+- Remove missing and inconsistent values  
+- Standardize feature formats  
+- Encode categorical transaction types  
+- Identify extreme outliers (e.g., impossible balances)
+
+### **2. Exploratory Data Analysis (EDA)**
+- Transaction type distribution  
+- Fraud vs. non-fraud comparison  
+- Balance behavior patterns  
+- Correlation matrix & feature importance  
+
+### **3. Feature Engineering**
+- Net balance change  
+- Transaction anomaly ratios  
+- Categorical → numerical transformations  
 - Scaling numerical values  
-- Handling inconsistent balance values  
-- Train-test split  
-- Optional: Handling class imbalance  
 
-### 4.2 Models Tested
+### **4. Model Training**
+Algorithms explored:
 - Logistic Regression  
 - Random Forest  
-- Decision Trees  
 - XGBoost  
 - Gradient Boosting  
 
+The final model is exported as:
 
