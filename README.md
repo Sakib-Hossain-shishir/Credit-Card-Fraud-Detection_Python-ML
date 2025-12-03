@@ -1,6 +1,5 @@
 # 🚨 Fraud Detection ML Application
 
-## 🔍 Project Overview
 This project builds a machine learning system to identify fraudulent financial transactions using structured data, feature engineering, and a fully interactive Streamlit application.  
 The goal is straightforward: detect suspicious transactions early, reduce risk, and demonstrate a clean, production-ready ML workflow.
 
